@@ -1,7 +1,24 @@
 aid: elephint
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elephint.png
 name: Elephint
-description: Elephint is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Elephint is an electronics-photonics integration company building integrated photonic
+  systems-on-a-chip (SoC) technologies. Its focus areas span photonic integrated circuits, silicon
+  photonics, free-space optical communication, fiber optics, optical amplifiers, coherent beam
+  combining, wavefront control, photonic signal processing, photonic computing, and artificial
+  intelligence. Surfaced as a portfolio company of 500 Global and added to the API Evangelist network,
+  Elephint is a deep-tech hardware company that presently publishes only a company website
+  (https://elephint.ai) and does not expose a public developer API, documentation, or SDK surface.
 url: https://raw.githubusercontent.com/api-evangelist/elephint/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Photonics
+- Silicon Photonics
+- Photonic Integrated Circuits
+- Semiconductors
+- Hardware
+- Optical Communication
+- Photonic Computing
+- Artificial Intelligence
+- Deep Tech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/elephint-domain-security.yml
 - type: Website
   url: https://elephint.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
